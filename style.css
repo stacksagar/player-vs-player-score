@@ -1,0 +1,199 @@
+body{
+    background:#333;
+    text-align: center;
+} 
+.main{
+    margin-top:50px ;
+}
+#bgChangeInput{
+    position: fixed;
+    right:50px;
+    top:50px;
+    color:#fff !important;
+    cursor: pointer;
+} 
+#bgChangeInput input{
+    background: transparent;
+    border:none; 
+    visibility: hidden;
+}
+ #lebelColor{
+     background:#555;
+     color:#fff;
+     width:40px;
+     border:none;
+     height:40px;
+     border-radius:50%;
+     cursor: pointer;
+ }
+ #lebelColor::before{
+     content: 'Change Background Color';
+     position: absolute;
+     width:150px;
+     left:-150px;
+     top:0px;
+     padding:10px;
+     transition:all 0.7s;
+     font-size:14px;
+     transform: scale(0);
+     transform-origin: right;
+ }
+ #lebelColor:hover::before{
+    transform: scale(1);     
+ }
+#n{
+    position: fixed;
+    right:40px;
+    bottom:20px;
+    font-size:30px;
+}
+#n button{
+    background:transparent !important;
+    border:none;
+    color:#ffffff38;
+}
+*{ 
+    font-family:Ubuntu,Comic sans MS, arial, tahoma;
+    text-align: center;
+    transition: all 0.6s !important;
+}
+#input{
+    background:#00000088;
+    border:none;
+    color:#fff !important;
+    font-size:14px;
+    padding:15px 0px;
+    transform: scale(1);
+    border-radius:20px 0px 0px 20px;
+}
+#input-placeholder{
+    color:#fff;
+}
+#input:focus{
+    background:#47303055;    
+} 
+button{
+    border-radius:20px !important;
+}
+#add{ 
+    background:#555;
+    border:none;
+    color:#ddd;
+    border-radius:0px 20px 20px 0px !important;
+}
+.score1,.score2{
+    font-size:45px;
+    color:#fff;  
+    margin: 0px !important;
+    background: #00000055;
+    text-align: right;
+    padding-right:20%;
+    position: relative;
+    border-radius:20px;
+}
+#firstPName,#secondPName{ 
+    font-size:13px;
+    position: absolute;
+    left:25px;
+    height:15px;
+    top:0; 
+    bottom:0;
+    margin: auto;
+}
+#edit1stName,#edit2ndName{
+    cursor: pointer;
+    font-size:13px;
+    position: absolute;
+    top:5px;
+    left:5px;
+    display: inline-block;
+    z-index:22;
+    transform: scale(0);
+}
+.score1:hover #edit1stName, .score2:hover #edit2ndName{
+    transform: scale(1);
+}
+#forEdit1st,#forEdit2nd{
+    width:70%;  
+    position:absolute;
+    top:-110%;
+    left:0;
+    right:0; 
+    z-index:11;
+    margin: auto; 
+    transform: scaleY(0);
+    transform-origin:bottom;
+}
+#forEdit1st input,#forEdit2nd input{
+    background:#555;
+    border:none;
+    color:#fff; 
+}
+#forEdit1st input:focus,#forEdit2nd input:focus{
+    outline:none;
+}
+.checkButton{ 
+    font-size:12px;
+    border-radius:0px !important; 
+    display: inline;
+} 
+.messageMain{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    width:300px;
+    height:fit-content; 
+    padding:40px;
+    z-index: 11; 
+    border-radius:10px;
+    transform: scale(0);
+    transition: all 0.4s;
+}
+#removeMes{
+    position: absolute;
+    top:1px;
+    right:5px;
+    cursor: pointer;
+    font-size:30px;
+}
+
+#loading{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    width:60px;
+    height:60px; 
+    z-index: 33;
+    transform: scale(0);
+}
+.col-sm-4 button{
+    padding:15px 0px;
+}
+@media(max-width:576px){
+    #bgChangeInput{
+        top:15px;
+        right:15px;
+    }
+    .score1,.score2{
+        font-size:22px;  
+        padding-top:10px;
+        padding-bottom:10px;
+    } 
+    .mt-sm-little{
+        margin-top:10px;
+    }.col-sm-4 button{
+        padding:8px 0px;
+    }
+    #input{
+        padding:10px 0px;
+    }
+    .main{
+        margin-top:10px ;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player vs Player</title>
+    <link rel="stylesheet" href="files/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="bgChangeInput">
+        <div class="input-group">
+            <input type="color" id="color" value="#333333">
+            <div class="input-group-append">
+                <label id="lebelColor" class="input-group-text" for="color"><i class="fa fa-edit"></i></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert alert-warning bg-danger text-warning messageMain">
+        <span id="removeMes"><i class="fa fa-times-circle"></i></span>
+        <p class="message m-0">Wrong informations!</p>
+    </div>
+
+    <div id="loading">
+        <img src="files/loading.gif" alt="">
+    </div>
+
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto text-light">
+                    <div class="row">
+
+                        <div class="col-12 mb-3">
+                            <h3 class="text-success">
+                                Player VS Player <i class="fa fa-fire"></i>
+                            </h3>
+                        </div>
+
+                        <div class="col-sm-5 col-12">
+
+                            <div id="forEdit1st"> 
+                                <div class="input-group">
+                                    <input class="form-control" type="text d-inline" value="1st Player">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary checkButton">
+                                            <i class="fa fa-check"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="score1">
+                                <span id="edit1stName"><i class="fa fa-edit"></i> </span>
+                                <span id="firstPName"> 1st
+                                    Player</span>
+                                <span class="firstScore"></span>
+                            </h5>
+                        </div>
+
+                        <div class="col-sm-2 col-12">
+                            <h6 class="text-info small m-0">Target </h6>
+                            <h3 class="text-primary m-0"> <span id="targetValue"></span> </h3>
+                        </div>
+
+                        <div class="col-sm-5 col-12">
+
+                            <div id="forEdit2nd"> 
+                                <div class="input-group">
+                                    <input class="form-control" type="text d-inline" value="2nd Player">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary checkButton">
+                                            <i class="fa fa-check"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="score2">
+                                <span id="edit2ndName"><i class="fa fa-edit"></i></span>
+                                <span id="secondPName"> 2nd
+                                    Player</span>
+                                <span class="secondScore"></span>
+                            </h5>
+                        </div>
+
+                        <div class="col-12 mt-2">
+                            <div class="row">
+                                <div class="col-md-6 col-12 m-auto">
+                                    <form action="" class="mt-2">
+                                        <div class="form-group" >
+                                            <div class="input-group">
+                                                <input id="input" placeholder="Your Target Score..." type="number"
+                                                    class="form-control">
+                                                <div class="input-group-append">
+                                                    <button id="add" class="input-group-text btn btn-secondary">
+                                                        Add
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-6">
+                            <button id="firstPlayerButton" class="btn btn-primary btn-block ">Player 1</button>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <button id="secondPlayerButton" class="btn btn-primary btn-block ">Player 2</button>
+                        </div>
+                        <div class="col-sm-4 col-12 mt-sm-little">
+                            <button id="resetAll" class="btn btn-danger btn-block ">Reset All</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="n"><a target='_blank' href="https://github.com/stacksagar"><i class="fab fa-github"></i></a> <button disabled="disabled">StackSagar</button></div>
+
+    <script src="files/all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
